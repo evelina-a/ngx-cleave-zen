@@ -20,7 +20,7 @@
             "main": "apps/sandbox/src/main.ts",
             "polyfills": "apps/sandbox/src/polyfills.ts",
             "tsConfig": "apps/sandbox/tsconfig.app.json",
-            "aot": false,
+            "aot": true,
             "assets": [
               "apps/sandbox/src/favicon.ico",
               "apps/sandbox/src/assets"
@@ -41,7 +41,6 @@
               "sourceMap": false,
               "extractCss": true,
               "namedChunks": false,
-              "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
@@ -136,7 +135,12 @@
             "tsConfig": "libs/ngx-cleave/tsconfig.lib.json",
             "project": "libs/ngx-cleave/ng-package.json"
           }
-        },
+        ,          "configurations": {
+            "production": {
+              "tsConfig": "libs/ngx-cleave/tsconfig.lib.prod.json"
+            }
+          }
+},
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
