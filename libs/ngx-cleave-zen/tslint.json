@@ -10,7 +10,7 @@
     "component-selector": [
       true,
       "element",
-      "ngx-cleave",
+      "ngx-cleave-zen",
       "kebab-case"
     ],
     "no-input-rename": false,

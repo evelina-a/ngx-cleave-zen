@@ -1,5 +1,5 @@
 {
-  "npmScope": "ngx-cleave",
+  "npmScope": "ngx-cleave-zen",
   "implicitDependencies": {
     "angular.json": "*",
     "package.json": "*",
@@ -14,7 +14,7 @@
     "sandbox": {
       "tags": []
     },
-    "ngx-cleave": {
+    "ngx-cleave-zen": {
       "tags": []
     }
   }

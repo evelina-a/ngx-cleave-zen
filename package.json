@@ -1,10 +1,10 @@
 {
-  "name": "ngx-cleave",
+  "name": "ngx-cleave-zen",
   "version": "0.0.0-development",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/IKatsuba/ngx-cleave.git"
+    "url": "https://github.com/evelina-a/ngx-cleave-zen"
   },
   "license": "MIT",
   "scripts": {
@@ -16,9 +16,9 @@
     "affected:libs": "nx affected:libs",
     "affected:lint": "nx affected:lint",
     "affected:test": "nx affected:test",
-    "build": "ng build ngx-cleave",
+    "build": "ng build ngx-cleave-zen",
     "dep-graph": "nx dep-graph",
-    "docs": "compodoc ./libs/ngx-cleave -d ./docs -p ./libs/ngx-cleave/tsconfig.lib.json --disablePrivate --disableInternal --disableLifeCycleHooks --disableDependencies",
+    "docs": "compodoc ./libs/ngx-cleave-zen -d ./docs -p ./libs/ngx-cleave-zen/tsconfig.lib.json --disablePrivate --disableInternal --disableLifeCycleHooks --disableDependencies",
     "e2e": "ng e2e",
     "format": "nx format:write",
     "format:check": "nx format:check",
@@ -43,7 +43,7 @@
     "@angular/platform-browser": "^17.0.0",
     "@angular/platform-browser-dynamic": "^17.0.0",
     "@angular/router": "^17.0.0",
-    "@nrwl/angular": "@nrwl/angular",
+    "@nx/angular": "^19.2.3",
     "cleave.js": "^1.5.3",
     "core-js": "^2.5.4",
     "ng-packagr": "^17.0.0",
@@ -78,6 +78,6 @@
     "ts-jest": "24.0.0",
     "ts-node": "~7.0.0",
     "tslint": "~6.1.0",
-    "typescript": "~4.0.8"
+    "typescript": "~5.4.5"
   }
 }

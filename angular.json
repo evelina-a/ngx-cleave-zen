@@ -10,7 +10,7 @@
       },
       "root": "apps/sandbox",
       "sourceRoot": "apps/sandbox/src",
-      "prefix": "ngx-cleave",
+      "prefix": "ngx-cleave-zen",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -25,7 +25,9 @@
               "apps/sandbox/src/favicon.ico",
               "apps/sandbox/src/assets"
             ],
-            "styles": ["apps/sandbox/src/styles.scss"],
+            "styles": [
+              "apps/sandbox/src/styles.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -83,7 +85,10 @@
               "apps/sandbox/tsconfig.app.json",
               "apps/sandbox/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/sandbox/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/sandbox/**"
+            ]
           }
         },
         "test": {
@@ -117,46 +122,54 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": ["apps/sandbox-e2e/tsconfig.e2e.json"],
-            "exclude": ["**/node_modules/**", "!apps/sandbox-e2e/**"]
+            "tsConfig": [
+              "apps/sandbox-e2e/tsconfig.e2e.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/sandbox-e2e/**"
+            ]
           }
         }
       }
     },
-    "ngx-cleave": {
+    "ngx-cleave-zen": {
       "projectType": "library",
-      "root": "libs/ngx-cleave",
-      "sourceRoot": "libs/ngx-cleave/src",
-      "prefix": "ngx-cleave",
+      "root": "libs/ngx-cleave-zen",
+      "sourceRoot": "libs/ngx-cleave-zen/src",
+      "prefix": "ngx-cleav-zen",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "libs/ngx-cleave/tsconfig.lib.json",
-            "project": "libs/ngx-cleave/ng-package.json"
-          }
-        ,          "configurations": {
+            "tsConfig": "libs/ngx-cleave-zen/tsconfig.lib.json",
+            "project": "libs/ngx-cleave-zen/ng-package.json"
+          },
+          "configurations": {
             "production": {
-              "tsConfig": "libs/ngx-cleave/tsconfig.lib.prod.json"
+              "tsConfig": "libs/ngx-cleave-zen/tsconfig.lib.prod.json"
             }
           }
-},
+        },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "libs/ngx-cleave/tsconfig.lib.json",
-              "libs/ngx-cleave/tsconfig.spec.json"
+              "libs/ngx-cleave-zen/tsconfig.lib.json",
+              "libs/ngx-cleave-zen/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/ngx-cleave/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/ngx-cleave-zen/**"
+            ]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
           "options": {
-            "jestConfig": "libs/ngx-cleave/jest.config.js",
-            "tsConfig": "libs/ngx-cleave/tsconfig.spec.json",
-            "setupFile": "libs/ngx-cleave/src/test-setup.ts"
+            "jestConfig": "libs/ngx-cleave-zen/jest.config.js",
+            "tsConfig": "libs/ngx-cleave-zen/tsconfig.spec.json",
+            "setupFile": "libs/ngx-cleave-zen/src/test-setup.ts"
           }
         }
       },

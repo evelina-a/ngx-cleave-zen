@@ -1,12 +1,12 @@
 {
-  "name": "ngx-cleave",
+  "name": "ngx-cleave-zen",
   "version": "0.0.0",
   "description": "Integration of cleave.js with Angular",
   "keywords": [
     "cleave.js",
     "angular",
     "ngx",
-    "ngx-cleave"
+    "ngx-cleave-zen"
   ],
   "homepage": "https://github.com/IKatsuba/ngx-cleave#readme",
   "bugs": {

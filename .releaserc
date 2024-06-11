@@ -6,7 +6,7 @@
     [
       "@semantic-release/npm",
       {
-        "pkgRoot": "./dist/libs/ngx-cleave"
+        "pkgRoot": "./dist/libs/ngx-cleave-zen"
       }
     ],
     "@semantic-release/github"
